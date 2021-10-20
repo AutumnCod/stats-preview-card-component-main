@@ -114,8 +114,8 @@ picture {
 }
 
 .text-white-mp {
-	color: hsla( var(--clr-stw-mp));
+	color: hsla( var(--clr-ntl-stw-mp));
 }
 .text-white-state {
-	color: hsla( var(clr-stw-mp));
+	color: hsla( var(clr-ntl-stw-state));
 }

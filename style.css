@@ -28,10 +28,7 @@
 body,
 h1,
 h2,
-h3,
-h4,
-p,
-figure {
+p {
 	margin: 0;
 }
 
@@ -39,17 +36,8 @@ figure {
 body,
 h1,
 h2,
-h3,
-h4,
-p,
-figure {
+p {
 	padding: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-	list-style: none;
 }
 
 /* Set core root defaults */
@@ -63,12 +51,6 @@ body {
 	line-height: 1.5;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-	max-width: 100%;
-	display: block;
-}
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -102,20 +84,89 @@ picture {
 }
 
 .bg-card-clr {
-		background: hsl(var(--clr-primary-ddb));
+	background: hsl(var(--clr-primary-ddb));
 }
 
 .text-clr-accent {
-	color: hsl( var(--clr-primary-sv) )
+	color: hsl(var(--clr-primary-sv));
 }
 
 .text-white {
-	color: hsl( var(--clr-ntl-white) );
+	color: hsl(var(--clr-ntl-white));
 }
 
 .text-white-mp {
-	color: hsla( var(--clr-ntl-stw-mp));
+	color: hsla(var(--clr-ntl-stw-mp));
 }
 .text-white-state {
-	color: hsla( var(clr-ntl-stw-state));
+	color: hsla(var(--clr-ntl-stw-state));
+}
+
+body {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.card {
+	height: 80%;
+	width: 90%;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.card-image {
+	max-width: 100%;
+	height: 33%;
+	background-image: url('./images/image-header-mobile.jpg');
+	background-size: contain;
+	position: relative;
+}
+
+.card-image::before {
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  position: absolute;
+	width: inherit;
+	height: 100%;
+	background-color: hsl(var(--clr-primary-sv));
+	opacity: 0.7;
+	z-index: 22;
+}
+
+.accent {
+	display: inline-block;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 2rem;
+}
+
+h1 {
+	line-height: 1.1;
+	margin-bottom: 1.5rem;
+}
+
+p {
+	text-align: center;
+	line-height: 1.8;
+	margin-bottom: 2rem;
+	font-size: 15px;
+}
+
+.card-state {
+	flex-direction: column;
+}
+
+.card-state-box {
+	margin-bottom: 1rem;
 }

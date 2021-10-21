@@ -64,7 +64,7 @@ body {
 	width: inherit;
 	height: auto;
 	background-color: var(--clr-soft-violet);
-	opacity: 0.4;
+	opacity: 0.8;
 	border-radius: 10px 10px 0 0;
 }
 .card-content {

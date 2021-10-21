@@ -112,7 +112,7 @@ h1 {
 	font-weight: 700;
 	padding: 0.5rem;
 	color: var(--clr-white-normal);
-		font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Lexend Deca', sans-serif;
 }
 
 .card-state-description {
@@ -121,4 +121,55 @@ h1 {
 	color: var(--clr-white-trans-lighter);
 	font-family: 'Inter', sans-serif;
 	font-weight: 100;
+}
+
+.attribution {
+	color: var(--clr-white-normal);
+	font-family: 'Inter', sans-serif;
+}
+
+.attribution a,.attribution a:hover, .attribution a:active, .attribution a:visited {
+	color: var(--clr-soft-violet);
+	text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.card-img {
+		height: 100%;
+		border-radius: 0 10px 10px 0;
+	}
+
+	.card-img::after {
+		border-radius: 0 10px 10px 0;
+	}
+
+	.card-content {
+		padding: 4rem 8rem 0 4rem;
+		text-align: left;
+	}
+
+	h1 {
+		padding: 0;
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.description {
+		margin-bottom: 4rem;
+		font-size: 18px;
+	}
+
+	.card-state {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+	.card-state-title {
+		font-size: 1.125rem;
+	}
 }
